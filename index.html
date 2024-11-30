@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Radio 24/7</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/98504ea853.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">  
+    <header>
+      <h1>Lofi Radio</h1>
+      <h4>Listen now 24/7</h4>
+      <button class="button-23" role="button" onclick="setImage()">Change background</button>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="box" id="video-buttons">
+          <h2>Radios</h2>
+        </div>
+        <div id="player"></div>
+        <div class="sound-wave">
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+          <div class="sound-bar"></div>
+      </div>
+        <div class="player-buttons">
+          <i class="fa-solid fa-play" onclick="playVideo()"></i>
+          <i class="fa-solid fa-stop" onclick="stopVideo()"></i>
+          <i class="fa-solid fa-pause" onclick="pauseVideo()"></i>
+        </div>
+      </div>    
+    </main>
+    <footer></footer>
+  </div>  
+    
+  <script src="src/app.js"></script>  
+</body>
+</html>

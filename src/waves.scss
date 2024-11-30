@@ -1,0 +1,70 @@
+$bg: #d5d8dc;
+$size: 30px;
+$duration-base: .8;
+
+.sound-wave {
+  display: flex;
+  position: absolute;
+}
+.sound-bar {
+  width: $size;
+  height: $size;
+  background-color: $bg;
+  margin-right: $size;
+  transform: scaleY(1);
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  
+  &:nth-child(4n) {
+    animation-name: bar-scale-xl;
+    animation-duration: $duration-base + .2s;
+  }
+  &:nth-child(4) {
+    animation-duration: $duration-base + .35s;
+  }
+  &:nth-child(3) {
+    animation-name: bar-scale-lg;
+    animation-duration: $duration-base + 0s;
+  }
+  &:nth-child(6) {
+    animation-name: bar-scale-md;
+    animation-duration: $duration-base + .05s;
+  }
+  
+  &:nth-child(2),
+  &:nth-child(5),
+  &:nth-child(7),
+  &:nth-child(9) {
+    animation-name: bar-scale-sm;
+    animation-duration: .9s;
+  }
+}
+
+
+@keyframes bar-scale-sm {
+  0%, 50% { transform: scaleY(1) }
+  25% { transform: scaleY(6) }
+  75% { transform: scaleY(4) }
+}
+
+@keyframes bar-scale-md {
+  0%, 50% { transform: scaleY(2) }
+  25% { transform: scaleY(6)  }
+  75% { transform: scaleY(5) }
+}
+
+@keyframes bar-scale-lg {
+  0%, 50% { transform: scaleY(8) }
+  25% { transform: scaleY(4) }
+  75% { transform: scaleY(6) }
+}
+
+@keyframes bar-scale-xl {
+  0%, 50% { transform: scaleY(1) }
+  25% { transform: scaleY(7)  }
+  75% { transform: scaleY(11) }
+}
+
+
