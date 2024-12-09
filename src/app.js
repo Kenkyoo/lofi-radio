@@ -1,5 +1,5 @@
 const videos = ["jfKfPfyJRdk", "5yx6BWlEVcY", "Na0w3Mz46GA", "vrB9wC6quaU", "lZGGMRYdil8", "mwPR8aizAyo"];
-const images = ["https://kenkyoo.github.io/lofi-radio/images/img1.gif", "https://kenkyoo.github.io/lofi-radio/images/img2.gif", "https://kenkyoo.github.io/lofi-radio/images/img3.gif", "https://kenkyoo.github.io/lofi-radio/images/img4.gif", "https://kenkyoo.github.io/lofi-radio/images/img5.gif", "https://kenkyoo.github.io/lofi-radio/images/img6.gif", "https://kenkyoo.github.io/lofi-radio/images/img7.gif"]
+const images = ["./images/img1.gif", "./images/img2.gif", "./images/img3.gif", "./images/img4.gif", "./images/img5.gif", "./images/img6.gif", "./images/img7.gif"]
 // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
 
